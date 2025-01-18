@@ -1,0 +1,24 @@
+{
+    "default": {
+      "paths": [
+        "features/*.feature"
+      ],
+      "require": [
+        "step_definitions/*.js",  
+        "support/hooks.js"
+      ],
+      "formatOptions": {
+        "snippetInterface": "synchronous"
+      },
+      "format": [
+        "progress",
+        "@cucumber/pretty-formatter"
+      
+      ],
+      "plugins": [
+      {
+        "name": "allure-cucumberjs"
+      }
+    ]
+    }
+  }
